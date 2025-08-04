@@ -2,10 +2,12 @@ name: First Workflow
 
 
 on:  
-  push:
-   branches:
-     - master
-  
+  workflow_dispatch:
+    inputs:
+     approve:
+       description: "Approve to continue"
+       required: true
+       default: "yes"
 
 jobs:
   build:
