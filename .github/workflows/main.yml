@@ -1,11 +1,11 @@
 name: First Workflow
 
 
-on: [push, issues]
+on: [push, issues, pull_request]
 
 jobs:
   build:
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
     steps: 
       - name: Print build
         run: echo 'build' 
