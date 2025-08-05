@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Print build
-        run: echo 'build'  
+        run:  echo 'tag ${{github.ref_name}}' 
   test:
     runs-on: windows-latest
     steps: 
