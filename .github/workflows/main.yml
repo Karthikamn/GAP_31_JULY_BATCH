@@ -2,9 +2,7 @@ name: First Workflow
 
 
 on:  
- push:
-   branches:
-     - master   
+ push: 
    tags:
     - 'v*'
 
